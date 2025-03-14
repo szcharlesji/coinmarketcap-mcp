@@ -1,4 +1,4 @@
-# CoinMarketCap MCP Server
+# Crypto MCP
 
 A [Model Context Protocol](https://modelcontextprotocol.io/introduction) (MCP) server that provides Claude AI with real-time access to cryptocurrency data from the CoinMarketCap API.
 
@@ -32,8 +32,8 @@ To integrate this MCP server with Claude Desktop:
 {
     "mcpServers": {
         "cmc": {
-            "command": "node",
-            "args": ["/path/to/cmc-mcp/build/index.js"],
+            "command": "npx",
+            "args": ["crypto-mcp"],
             "env": {
                 "COINMARKET_API_KEY": "your-api-key-here"
             }
@@ -42,16 +42,7 @@ To integrate this MCP server with Claude Desktop:
 }
 ```
 
-Make sure to replace `/path/to/cmc-mcp` with the actual path to your installation and add your actual CoinMarketCap API key.
-
-> Note: This repository includes the prebuilt JavaScript file in the `build` directory, so you can use it directly without having to build the TypeScript code yourself.
-
-````
-
-Filepath: README.md
-Replace lines: 21-41
-```markdown
-## Installation
+## Manual Installation
 
 1. Clone this repository
 2. Install dependencies:
@@ -62,7 +53,7 @@ npm install
 
 # Using bun
 bun install
-````
+```
 
 3. (Optional) Build the TypeScript code:
 

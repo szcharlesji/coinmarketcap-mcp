@@ -1,24 +1,43 @@
 {
-    "name": "coinmarketcap-mcp",
-    "module": "src/index.ts",
+    "name": "crypto-mcp",
+    "version": "0.1.0",
+    "description": "CoinMarketCap MCP server for Claude and other MCP clients",
     "type": "module",
+    "main": "build/index.js",
     "bin": {
-        "coinmarketcap": "./build/index.js"
+        "cmc-mcp": "./build/index.js"
     },
     "scripts": {
-        "build": "tsc && chmod 755 build/index.js"
+        "build": "tsc && chmod 755 build/index.js",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "coinmarketcap",
+        "mcp",
+        "claude",
+        "model-context-protocol",
+        "crypto"
+    ],
+    "author": "Charles Ji",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/szcharlesji/coinmarketcap-mcp"
     },
     "files": [
-        "build"
+        "build",
+        "README.md",
+        "LICENSE"
     ],
-    "devDependencies": {
-        "@types/node": "latest",
-        "bun-types": "latest",
-        "typescript": "latest"
+    "engines": {
+        "node": ">=16.0.0"
     },
     "dependencies": {
         "@modelcontextprotocol/sdk": "latest",
         "zod": "latest"
+    },
+    "devDependencies": {
+        "@types/node": "latest",
+        "typescript": "latest"
     }
 }
-
