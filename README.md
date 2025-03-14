@@ -54,9 +54,7 @@ npm install
 bun install
 ```
 
-3. (Optional) Build the TypeScript code:
-
-    Note: The repository includes a prebuilt version in the `build` directory, so this step is optional if you don't need to modify the code.
+3.  Build the TypeScript code:
 
 ```bash
 # Using npm
