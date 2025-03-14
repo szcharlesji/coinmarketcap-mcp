@@ -15,7 +15,6 @@ This server provides the following tools to Claude:
 
 ## Prerequisites
 
-- Node.js or Bun
 - A CoinMarketCap API key (get one at [pro.coinmarketcap.com](https://pro.coinmarketcap.com))
 
 ## Integration with Claude Desktop
