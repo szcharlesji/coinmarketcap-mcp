@@ -18,29 +18,6 @@ This server provides the following tools to Claude:
 - Node.js or Bun
 - A CoinMarketCap API key (get one at [pro.coinmarketcap.com](https://pro.coinmarketcap.com))
 
-## Installation
-
-1. Clone this repository
-2. Install dependencies:
-
-```bash
-# Using npm
-npm install
-
-# Using bun
-bun install
-```
-
-3. Build the TypeScript code:
-
-```bash
-# Using npm
-npm run build
-
-# Using bun
-bun run build
-```
-
 ## Integration with Claude Desktop
 
 To integrate this MCP server with Claude Desktop:
@@ -66,6 +43,38 @@ To integrate this MCP server with Claude Desktop:
 ```
 
 Make sure to replace `/path/to/cmc-mcp` with the actual path to your installation and add your actual CoinMarketCap API key.
+
+> Note: This repository includes the prebuilt JavaScript file in the `build` directory, so you can use it directly without having to build the TypeScript code yourself.
+
+````
+
+Filepath: README.md
+Replace lines: 21-41
+```markdown
+## Installation
+
+1. Clone this repository
+2. Install dependencies:
+
+```bash
+# Using npm
+npm install
+
+# Using bun
+bun install
+````
+
+3. (Optional) Build the TypeScript code:
+
+    Note: The repository includes a prebuilt version in the `build` directory, so this step is optional if you don't need to modify the code.
+
+```bash
+# Using npm
+npm run build
+
+# Using bun
+bun run build
+```
 
 ## Usage in Claude
 
